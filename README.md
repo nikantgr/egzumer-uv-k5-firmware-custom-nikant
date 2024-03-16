@@ -1,3 +1,20 @@
+> [!WARNING]  
+> **⚠️❗☠️  EXPERIMENTAL PLAYGROUND 
+>Your warranty is now void. I am not responsible for bricked devices, dead radios, thermonuclear war. YOU are choosing to make these modifications, and if you point the finger at me for messing up your device, I will laugh at you. 
+> If you want to have a more stable FW, I advise you to look at other options. ☠️❗⚠️**
+>
+##
+### v.e0.0.1
+#### - Long press `M` key asigned to Switch Demodulation
+#### - added vertical line to separate menus from submenus
+#### - Makefile changes: ENABLE_SHOW_CHARGE_LEVEL
+#### - modification of ENABLE_BOOT_BEEPS (if Beeps enabled in Menu). Boot beep changed to a sound similar to Baofeng UV-5R
+#### - addition of ENABLE_INVERSE_DISPLAY : Well that.. (negative LCD)
+#### - changes to POWER_ON_DISPLAY_MODE_FULL_SCREEN
+#### - `UNLOCK ALL` frequencies to the hidden `F LOCK` menu now 3 times to activate
+##
+## This repository is a fork of [egzumer firwmare](https://github.com/egzumer/uv-k5-firmware-custom). My changes are minor at the moment and for personal use.
+##
 # Open re-implementation of the Quansheng UV-K5/K6/5R v2.1.27 firmware
 
 This repository is a merge of [OneOfEleven custom firmware](https://github.com/OneOfEleven/uv-k5-firmware-custom) with [fagci spectrum analizer](https://github.com/fagci/uv-k5-firmware-fagci-mod/tree/refactor) plus my few changes.<br>

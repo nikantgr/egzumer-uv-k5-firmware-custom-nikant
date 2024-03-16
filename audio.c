@@ -1,6 +1,12 @@
 /* Copyright 2023 Dual Tachyon
  * https://github.com/DualTachyon
  *
+ * Modified work Copyright 2023-2024 egzumer
+ * https://github.com/egzumer
+ *
+ * Modified work Copyright 2024 nikant
+ * https://github.com/nikant
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -94,6 +100,9 @@ void AUDIO_PlayBeep(BEEP_Type_t Beep)
 		case BEEP_880HZ_500MS:
 			ToneFrequency = 880;
 			break;
+		case BEEP_1399HZ_50MS_OPTIONAL:
+			ToneFrequency = 1399;
+			break; 	
 	}
 
 	BK4819_PlayTone(ToneFrequency, true);
@@ -129,6 +138,10 @@ void AUDIO_PlayBeep(BEEP_Type_t Beep)
 			BK4819_ExitTxMute();
 			Duration = 40;
 			break;
+		case BEEP_1399HZ_50MS_OPTIONAL:	
+			BK4819_ExitTxMute();
+			Duration = 50;
+			break; 
 		case BEEP_880HZ_200MS:
 			BK4819_ExitTxMute();
 			Duration = 200;

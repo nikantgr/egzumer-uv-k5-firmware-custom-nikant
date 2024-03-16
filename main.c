@@ -173,10 +173,18 @@ void Main(void)
 					boot_counter_10ms = 0;
 					break;
 				}
+	            #ifdef ENABLE_BOOT_BEEPS
+	               if ((boot_counter_10ms % 250) == 0) {
+						AUDIO_PlayBeep(BEEP_1399HZ_50MS_OPTIONAL);
+						AUDIO_PlayBeep(BEEP_1399HZ_50MS_OPTIONAL);							
+                    }
+	            #endif
+/*
 #ifdef ENABLE_BOOT_BEEPS
 				if ((boot_counter_10ms % 25) == 0)
 					AUDIO_PlayBeep(BEEP_880HZ_40MS_OPTIONAL);
 #endif
+*/
 			}
 		}
 
