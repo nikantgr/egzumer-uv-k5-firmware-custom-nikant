@@ -57,8 +57,7 @@ void UI_DisplayWelcome(void)
 	{
 		ST7565_BlitFullScreen();
 	}
-	else
-	if (gEeprom.POWER_ON_DISPLAY_MODE == POWER_ON_DISPLAY_MODE_FULL_SCREEN)
+	else if (gEeprom.POWER_ON_DISPLAY_MODE == POWER_ON_DISPLAY_MODE_FULL_SCREEN)
 	{
 		char battstatus[10];
 		sprintf(battstatus, "%u.%02uV %u%%",gBatteryVoltageAverage / 100,gBatteryVoltageAverage % 100,BATTERY_VoltsToPercent(gBatteryVoltageAverage));
@@ -70,7 +69,7 @@ void UI_DisplayWelcome(void)
 			UI_PrintString("Quansheng", 0, LCD_WIDTH, 0, 8);	
 			UI_PrintString(battstatus, 0, LCD_WIDTH, 3, 10);
 		#endif	
-		UI_PrintStringSmall(Version, 0, 128, 6);
+		UI_PrintStringSmallNormal(Version, 0, 128, 6);
 		ST7565_BlitStatusLine();  // blank status line
 		ST7565_BlitFullScreen();	
 

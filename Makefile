@@ -25,7 +25,7 @@ ENABLE_WIDE_RX                ?= 1
 ENABLE_TX_WHEN_AM             ?= 0
 ENABLE_F_CAL_MENU             ?= 0
 ENABLE_CTCSS_TAIL_PHASE_SHIFT ?= 0
-ENABLE_BOOT_BEEPS             ?= 0
+ENABLE_BOOT_BEEPS             ?= 1
 ENABLE_SHOW_CHARGE_LEVEL      ?= 1
 ENABLE_REVERSE_BAT_SYMBOL     ?= 0
 ENABLE_NO_CODE_SCAN_TIMEOUT   ?= 1
@@ -53,13 +53,13 @@ ENABLE_OVERLAY                ?= 0
 ENABLE_LTO                    ?= 1
 
 # ---- NIKANT-SY1EBE ----
-ENABLE_SY1EBE                 ?= 0
+ENABLE_SY1EBE                 ?= 1
 ENABLE_INVERSE_DISPLAY        ?= 0
 
 #############################################################
 
-AUTHOR_STRING ?= EGZUMER-NIKANT
-VERSION_STRING := v.e0.0.1
+AUTHOR_STRING ?= EGZUMER
+VERSION_STRING ?= nk001
 
 ifeq ($(ENABLE_SY1EBE),1)
 	TARGET = firmware.$(AUTHOR_STRING).$(VERSION_STRING).SY1EBE
@@ -388,9 +388,9 @@ endif
 ifeq ($(ENABLE_AGC_SHOW_DATA),1)
 	CFLAGS  += -DENABLE_AGC_SHOW_DATA
 endif
-ifeq ($(ENABLE_FLASHLIGHT),1)
+#ifeq ($(ENABLE_FLASHLIGHT),1)
 	CFLAGS  += -DENABLE_FLASHLIGHT
-endif
+#endif
 ifeq ($(ENABLE_UART_RW_BK_REGS),1)
 	CFLAGS  += -DENABLE_UART_RW_BK_REGS
 endif
