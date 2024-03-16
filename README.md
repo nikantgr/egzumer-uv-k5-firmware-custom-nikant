@@ -4,7 +4,7 @@
 > If you want to have a more stable FW, I advise you to look at other options. ☠️❗⚠️**
 >
 ##
-### v.e0.0.1
+### v.nk0.0.1
 #### - Long press `M` key asigned to Switch Demodulation
 #### - added vertical line to separate menus from submenus
 #### - Makefile changes: ENABLE_SHOW_CHARGE_LEVEL
