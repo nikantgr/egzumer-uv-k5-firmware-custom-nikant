@@ -53,7 +53,7 @@ ENABLE_OVERLAY                ?= 0
 ENABLE_LTO                    ?= 1
 
 # ---- NIKANT-SY1EBE ----
-ENABLE_SY1EBE                 ?= 1
+ENABLE_SY1EBE                 ?= 0
 ENABLE_INVERSE_DISPLAY        ?= 0
 
 #############################################################
