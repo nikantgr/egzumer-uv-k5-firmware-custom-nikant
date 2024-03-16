@@ -812,7 +812,7 @@ void UI_DisplayMenu(void)
 			break;
 
 		case MENU_F_LOCK:
-			if(!gIsInSubMenu && gUnlockAllTxConfCnt>0 && gUnlockAllTxConfCnt<10)
+			if(!gIsInSubMenu && gUnlockAllTxConfCnt>0 && gUnlockAllTxConfCnt<3)
 				strcpy(String, "THE\nNUMBER\nIS THREE");
 			else
 				strcpy(String, gSubMenu_F_LOCK[gSubMenuSelection]);
