@@ -1,6 +1,12 @@
 /* Copyright 2023 Dual Tachyon
  * https://github.com/DualTachyon
  *
+ * Modified work Copyright 2023-2024 egzumer
+ * https://github.com/egzumer
+ *
+ * Modified work Copyright 2024 nikant
+ * https://github.com/nikant
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -729,9 +735,9 @@ void MENU_AcceptSetting(void)
 			break;
 
 		case MENU_F_LOCK: {
-			if(gSubMenuSelection == F_LOCK_NONE) { // select 10 times to enable
+			if(gSubMenuSelection == F_LOCK_NONE) { // select 3 times to enable
 				gUnlockAllTxConfCnt++;
-				if(gUnlockAllTxConfCnt < 10)
+				if(gUnlockAllTxConfCnt < 3)
 					return;
 			}
 			else

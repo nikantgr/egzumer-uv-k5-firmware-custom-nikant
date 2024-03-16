@@ -1,6 +1,12 @@
 /* Copyright 2023 Dual Tachyon
  * https://github.com/DualTachyon
  *
+ * Modified work Copyright 2023-2024 egzumer
+ * https://github.com/egzumer
+ *
+ * Modified work Copyright 2024 nikant
+ * https://github.com/nikant
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -1091,11 +1097,18 @@ void APP_TimeSlice10ms(void)
 	gFlashLightBlinkCounter++;
 
 #ifdef ENABLE_BOOT_BEEPS
+	if ((boot_counter_10ms > 0) && (boot_counter_10ms % 250) == 0) {
+		AUDIO_PlayBeep(BEEP_1399HZ_50MS_OPTIONAL);
+		AUDIO_PlayBeep(BEEP_1399HZ_50MS_OPTIONAL);
+	}
+#endif 
+/*
+#ifdef ENABLE_BOOT_BEEPS
 	if (boot_counter_10ms > 0 && (boot_counter_10ms % 25) == 0) {
 		AUDIO_PlayBeep(BEEP_880HZ_40MS_OPTIONAL);
 	}
 #endif
-
+*/
 #ifdef ENABLE_AM_FIX
 	if (gRxVfo->Modulation == MODULATION_AM) {
 		AM_fix_10ms(gEeprom.RX_VFO);
