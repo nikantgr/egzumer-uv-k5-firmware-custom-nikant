@@ -42,7 +42,6 @@
 #include "menu.h"
 #include "ui.h"
 
-
 const t_menu_item MenuList[] =
 {
 //   text,     voice ID,                               menu ID
@@ -128,6 +127,7 @@ const t_menu_item MenuList[] =
 #endif
 	{"BatVol", VOICE_ID_INVALID,                       MENU_VOL           }, // was "VOL"
 	{"RxMode", VOICE_ID_DUAL_STANDBY,                  MENU_TDR           },
+	{"Ver",    VOICE_ID_INVALID,                       MENU_NKINF         },	
 	{"Sql",    VOICE_ID_SQUELCH,                       MENU_SQL           },
 
 	// hidden menu items from here on
@@ -278,6 +278,11 @@ const char gSubMenu_RESET[][4] =
 {
 	"VFO",
 	"ALL"
+};
+
+const char * const gSubMenu_NKINF[] =
+{
+	"EGZUMER\nNIKANT\n" VERSION_STRING
 };
 
 const char * const gSubMenu_F_LOCK[] =
@@ -809,6 +814,10 @@ void UI_DisplayMenu(void)
 
 		case MENU_RESET:
 			strcpy(String, gSubMenu_RESET[gSubMenuSelection]);
+			break;
+
+		case MENU_NKINF:
+			strcpy(String, "EGZUMER\nNIKANT\n" VERSION_STRING);
 			break;
 
 		case MENU_F_LOCK:

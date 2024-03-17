@@ -12,6 +12,7 @@
 #### - addition of ENABLE_INVERSE_DISPLAY : Well that.. (negative LCD)
 #### - changes to POWER_ON_DISPLAY_MODE_FULL_SCREEN
 #### - `UNLOCK ALL` frequencies to the hidden `F LOCK` menu now 3 times to activate
+#### - all small fonts are bold for better readability and because I am old 😆 (and to save some space in firmware)
 ##
 ## This repository is a fork of [egzumer firwmare](https://github.com/egzumer/uv-k5-firmware-custom). My changes are minor at the moment and for personal use.
 ##

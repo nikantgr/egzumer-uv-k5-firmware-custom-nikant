@@ -18,7 +18,9 @@ ENABLE_DTMF_CALLING           ?= 1
 
 # ---- CUSTOM MODS ----
 ENABLE_BIG_FREQ               ?= 1
-ENABLE_SMALL_BOLD             ?= 1
+# DO NOT ENABLE SMALL_BOLD or the firmware will not fit with the FM_INPUT option
+# All fonts are bold now
+ENABLE_SMALL_BOLD             ?= 0
 ENABLE_CUSTOM_MENU_LAYOUT     ?= 1
 ENABLE_KEEP_MEM_NAME          ?= 1
 ENABLE_WIDE_RX                ?= 1
