@@ -5,6 +5,7 @@
 >
 ##
 ### v.nk0.0.1
+#### - NOAA frequencies replaced with 10 first PMR frequencies
 #### - Long press `M` key asigned to Switch Demodulation
 #### - added vertical line to separate menus from submenus
 #### - Makefile changes: ENABLE_SHOW_CHARGE_LEVEL
