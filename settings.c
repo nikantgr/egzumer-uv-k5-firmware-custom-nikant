@@ -172,7 +172,7 @@ void SETTINGS_InitEEPROM(void)
 	gEeprom.DTMF_CODE_PERSIST_TIME  = (Data[0] < 101) ? Data[0] * 10 : 100;
 	gEeprom.DTMF_CODE_INTERVAL_TIME = (Data[1] < 101) ? Data[1] * 10 : 100;
 #ifdef ENABLE_DTMF_CALLING
-	gEeprom.PERMIT_REMOTE_KILL      = (Data[2] <   2) ? Data[2] : true;
+	gEeprom.PERMIT_REMOTE_KILL      = (Data[2] <   2) ? Data[2] : false;
 
 	// 0EE0..0EE7
 
