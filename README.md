@@ -16,7 +16,7 @@
 #### - `UNLOCK ALL` frequencies to the hidden `F LOCK` menu now 3 times to activate
 #### - all small fonts are bold for better readability and because I am old 😆 (and to save some space in firmware)
 ##
-## This repository is a fork of [egzumer firwmare](https://github.com/egzumer/uv-k5-firmware-custom). My changes are minor at the moment and for personal use.
+## This repository is a fork of [egzumer firwmare](https://github.com/egzumer/uv-k5-firmware-custom). My changes are minor. Check [releases](https://github.com/nikantgr/egzumer-uv-k5-firmware-custom-nikant/releases)
 ##
 # Open re-implementation of the Quansheng UV-K5/K6/5R v2.1.27 firmware
 
