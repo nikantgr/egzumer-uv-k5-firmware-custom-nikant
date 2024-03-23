@@ -5,7 +5,7 @@
 >
 ##
 ### v.nk0.0.1
-#### - frequencies are now 18MHz ~ `660MHz` and `760MHz` ~ 1300MHz as per BK4819 specs
+#### - frequencies are now 18MHz ~ `660MHz` and 840MHz ~ 1300MHz as per BK4819 specs https://www.alldatasheet.com/datasheet-pdf/pdf/1756567/BEKEN/BK4819.html
 #### - NOAA frequencies replaced with 10 first PMR frequencies
 #### - Long press `M` key asigned to Switch Demodulation
 #### - added vertical line to separate menus from submenus
