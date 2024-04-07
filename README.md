@@ -4,6 +4,11 @@
 > If you want to have a more stable FW, I advise you to look at other options. ☠️❗⚠️**
 >
 ##
+### LICENSE: Thanks to closed source firmwares (like IJVs) the modifications made by me in the codebase are now licensed under GNU GPL v3 from now on.
+### This means anyone who distributes a changed version of this code containing code added be me must:
+### - Share the source code for their changes: This allows others to see what was modified and potentially build upon your work.
+### - Make the source code available upon request: Even if someone receives the original code, they can still request the source code for any modifications you made.
+##
 ### v.nk0.0.1
 #### - frequencies are now 18MHz ~ `660MHz` and 840MHz ~ 1300MHz as per BK4819 specs https://www.alldatasheet.com/datasheet-pdf/pdf/1756567/BEKEN/BK4819.html
 #### - NOAA frequencies replaced with 10 first PMR frequencies
