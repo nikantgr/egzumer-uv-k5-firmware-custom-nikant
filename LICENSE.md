@@ -14,7 +14,7 @@ We have included separate license files for clarity:
 LICENSE-Apache-2.0.md: This file details the Apache License 2.0 terms for the original code portions.
 LICENSE-CLOSED-SOURCE.md: This file details the terms of the closed source license for our modifications.
 
-Within the codebase all code that is not present in the original codespace of https://github.com/kamilsss655/uv-k5-firmware-custom is therefore licensed under the closed source license as described in LICENSE-CLOSED-SOURCE.md.
+Within the codebase all code that is not present in the original codespace of https://github.com/egzumer/uv-k5-firmware-custom is therefore licensed under the closed source license as described in LICENSE-CLOSED-SOURCE.md.
 
 Further Information:
 
