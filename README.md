@@ -4,15 +4,92 @@
 > If you want to have a more stable FW, I advise you to look at other options. ☠️❗⚠️**
 >
 ##
-### LICENSE: Thanks to closed source firmwares (like IJVs) the modifications made by me in the codebase are now licensed under GNU GPL v3 from now on.
-### This means anyone who distributes a changed version of this code containing code added be me must:
-### - Share the source code for their changes: This allows others to see what was modified and potentially build upon your work.
-### - Make the source code available upon request: Even if someone receives the original code, they can still request the source code for any modifications you made.
+### LICENSE: Thanks to closed source firmwares (like IJVs) and thanks to people flaming all other developers about the "best" firmware, the modifications made by me in the codebase are now closed source.
+##
+> [!NOTE]  
+> I wrote those changes in order to make a firmware suited for my personal use and fun. As it happens I also release the binaries here and some people are quite pleased with them. If you do not like them please move along and have fun..
+##
+### v.nk0.0.7
+#### - PMR only F-LOCK mode in hidden menu
+##
+### v.nk0.0.666
+#### - WELCOME TO HELL
+- Hellschreiber mode in messenger. 
+Messenger now has two modes: MORSE and HELL 
+You can send Hellschreiber tones in Feld Hell mode and 900 Hz
+To enter press `F` + `M`
+
+To change mode press `*`
+
+Write your text and press `M`
+  
+T9 keyboard is:
+<pre>
+[0 1 . , ?]   [A B C 2 @]    [D E F 3 -]
+
+[G H I 4 !]   [J K L 5 *]    [M N O 6 :]
+
+[P Q R S 7]   [T U V 8 /]    [W X Y Z 9]
+
+</pre>
+
+Tested with "IZ8BLY Hellschreiber for windows"
+https://antoninoporcino.xoom.it/Hell/
+
+Each message is transmitted twice
+
+#### - added switch Wide/Narrow in selection of sidekeys or long press `M`
+#### - bugfix in Morse Messenger when keypad is locked
+#### - DTMF calling is OFF. We need the space
+> [!IMPORTANT]  
+> Frequently Asked Questions/Requests/Facts: 
+> 
+> - Your firmware does not have XYZ feature!
+> - It does not work in my UV-K5, PC, my CHIRP!
+> - Can you make the firmware do BLAH BLAH and roll over?
+> - Firmware ZYX8OAA is better than yours! 
+> - IJV
+> 
+> Answers: I DO NOT CARE!
+>  
+##
+### v.nk0.0.5
+#### - bugfix in FM radio when keypad is locked
+#### - bitmaps a bit smaller to save space
+#### - cosmetic font changes
+##
+### v.nk0.0.4
+#### - ["missed call" indicator for missed RX, for up or down VFO position](https://raw.githubusercontent.com/nikantgr/egzumer-uv-k5-firmware-custom-nikant/nk0.0.1/images/nikant-004-missedRX.png)
+#### - added "W" symbol for Wide on screen
+##
+### v.nk0.0.3
+#### - compiled with ENABLE_REDUCE_LOW_POWER
+##
+### v.nk0.0.2
+#### - CAN YOU MORSE ? 
+- MORSE CODE tones TX added in messenger style interface. 
+
+To enter press `F` + `M`
+ 
+Write your text and press `M`
+  
+T9 keyboard in Morse mode is:
+<pre>
+[0 1 . , ?]   [A B C 2 @]    [D E F 3]
+
+[G H I 4]      [J K L 5]     [M N O 6]
+
+[P Q R S 7]    [T U V 8]    [W X Y Z 9]
+
+</pre>
+#### - PASSWORD set in menu: 6 digits
+#### - lower timings in Dual Watch mode (this is under test!)
+#### - SQUELCH can now be TEMPORARILY changed by pressing `F` + ↕️ (Up or Down arrows)
+#### - FM radio is now minimal taken from kamilsss655 firmware with my addition in order to be able to input a frequency. No memories though..  
 ##
 ### v.nk0.0.1
-#### - frequencies are now 18MHz ~ `660MHz` and 840MHz ~ 1300MHz as per BK4819 specs https://www.alldatasheet.com/datasheet-pdf/pdf/1756567/BEKEN/BK4819.html
+#### - frequencies are now 18MHz ~ `660MHz` and 840MHz ~ 1300MHz as per BK4819 specs
 #### - NOAA frequencies replaced with 10 first PMR frequencies
-#### - Long press `M` key asigned to Switch Demodulation
 #### - added vertical line to separate menus from submenus
 #### - Makefile changes: ENABLE_SHOW_CHARGE_LEVEL
 #### - modification of ENABLE_BOOT_BEEPS (if Beeps enabled in Menu). Boot beep changed to a sound similar to Baofeng UV-5R
@@ -21,7 +98,7 @@
 #### - `UNLOCK ALL` frequencies to the hidden `F LOCK` menu now 3 times to activate
 #### - all small fonts are bold for better readability and because I am old 😆 (and to save some space in firmware)
 ##
-## This repository is a fork of [egzumer firwmare](https://github.com/egzumer/uv-k5-firmware-custom). My changes are minor. Check [releases](https://github.com/nikantgr/egzumer-uv-k5-firmware-custom-nikant/releases)
+## This repository is a fork of [egzumer firwmare](https://github.com/egzumer/uv-k5-firmware-custom). Check [releases](https://github.com/nikantgr/egzumer-uv-k5-firmware-custom-nikant/releases)
 ##
 # Open re-implementation of the Quansheng UV-K5/K6/5R v2.1.27 firmware
 
@@ -108,7 +185,7 @@ You'll find the options at the top of "Makefile" ('0' = disable, '1' = enable) .
 
 |Build option | Description |
 | --- | ---- |
-|🧰 **STOCK QUANSHENG FEATURES**||
+|🧰 **STOCK QUANSHENG FERATURES**||
 | ENABLE_UART | without this you can't configure radio via PC ! |
 | ENABLE_AIRCOPY | easier to just enter frequency with butts |
 | ENABLE_FMRADIO | WBFM VHF broadcast band receiver |
